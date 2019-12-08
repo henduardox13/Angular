@@ -1,0 +1,37 @@
+
+<div class="col-md-12">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ver</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">WEBSITE</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Email</th>
+            <th scope="col">ADDRESS</th>
+            <th scope="col">PHONE</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor='let people of  peoples ; index  as  id '>
+           
+            <td><a  [routerLink]="['/peoples', people.id]"> {{ people.id }} </a> </td>
+            <td>{{ people.first_name }}</td>
+            <td>{{ people.last_name }}</td>
+            <td>{{ people.website }}</td>
+            <td>{{ people.dob }}</td>
+            <td>{{ people.email }}</td>
+            <td>{{ people.address }}</td>
+            <td>{{ people.phone }}</td>
+        </tr>
+        
+    </tbody>
+</table>    
+</div>
+
+
+
+
+    
